@@ -1,0 +1,14 @@
+.edit-btn,
+.delete-btn {
+  float: right;
+}
+
+.todo-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.edit-btn {
+  height: 100%;
+  margin-left: 5px;
+}

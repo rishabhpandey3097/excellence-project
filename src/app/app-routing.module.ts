@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { TodoComponent } from './Todo/todo.component';
+import { UserDataComponent } from './userData/userData.component';
 
+const routes: Routes = [
+  { path: '', redirectTo: '/todo', pathMatch: 'full' },
+  { path: 'todo', component: TodoComponent },
+  { path: 'users-list', component: UserDataComponent },
+];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
